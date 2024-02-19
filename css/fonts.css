@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* 영문 폰트 */
+
+/* 한글 폰트 */
+/* font-family: Pretendard; */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* font-family: TimesNewerRoman */
+@font-face {
+  font-family: TimesNewerRoman_b;
+  src: url(/fonts/TimesNewerRoman/TimesNewerRoman-Bold.otf);
+}
+
+@font-face {
+  font-family: TimesNewerRoman_b_i;
+  src: url(/fonts/TimesNewerRoman/TimesNewerRoman-BoldItalic.otf);
+}
+
+@font-face {
+  font-family: TimesNewerRoman_r;
+  src: url(/fonts/TimesNewerRoman/TimesNewerRoman-Regular.otf);
+}
+
+@font-face {
+  font-family: TimesNewerRoman_i;
+  src: url(/fonts/TimesNewerRoman/TimesNewerRoman-Italic.otf);
+}
