@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./img/favicon.png">
+  </head>
+  <body>
+    <form id="log_in_form">
+      <input required type="text" placeholder="너의 이름은?">
+      <button>확인</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="to_do_list_form" class="hidden">
+      <input required type="text" placeholder="해야할 일">
+      <button>추가</button>
+    </form>
+    <ul id="to_do_list" class="hidden"></ul>
+    <div id="quote">
+      <b>남들이 어떻게 생각하는지는 중요하지 않아</b>
+      <span>인어공주</span>
+    </div>
+    <div class="time_and_weather">
+      <span id="time">00:00:00</span>
+      <span id="weather">
+        <span>내 위치</span> / <span>날씨</span>
+      </span>
+    </div>
+    <img src="./img/background1.jpg" alt="배경이미지" id="random_background">
+    <script type="" src="main.js"></script>
+  </body>
+</html>

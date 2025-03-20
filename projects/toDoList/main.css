@@ -1,0 +1,225 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --point_color: #997dff;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: var(--white);
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  background: 0;
+}
+
+button {
+  all: unset;
+  border: 0;
+  background: var(--point_color);
+}
+
+input {
+  border: 1px solid var(--point_color);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+input[type=text] {
+  color: var(--white);
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+html {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-height: 422px;
+  background: #000;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#log_in_form {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#log_in_form input {
+  
+  text-align: center;
+}
+
+#log_in_form button {
+  text-align: center;
+  background: var(--point_color);
+}
+
+#greeting {
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+#to_do_list_form {
+  margin-bottom: 10px;
+}
+
+#log_in_form *,
+#to_do_list_form * {
+  padding: 10px 15px;
+  border-radius: 19.5px;
+  font-size: 14px;
+}
+
+#to_do_list_form input {
+  width: 220px;
+  height: 34px;
+  margin-right: 5px;
+}
+
+#to_do_list_form input:focus {
+  outline: 0;
+}
+
+#to_do_list {
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
+#to_do_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+#to_do_list::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#to_do_list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#to_do_list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border: 1px solid var(--point_color);
+  border-radius: 21px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#to_do_list li div {
+  max-width: 120px;
+  word-wrap: break-word;
+}
+
+#to_do_list li button {
+  width: 16.6667px;
+  height: 18px;
+  padding-bottom: 2px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  transform: scaleX(120%);
+  cursor: pointer;
+}
+
+#quote {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 799px) {
+  #quote {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+#quote b {
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 799px) {
+  #quote b {
+    display: block;
+    margin: 0 0 5px;
+    white-space: nowrap;
+  }
+}
+
+#quote span {
+  font-size: 12px;
+}
+
+.time_and_weather {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 250px;
+  transform: rotate(90deg) translate(-9.75px, calc(-125px + 9.75px + 20px));
+}
+
+@media screen and (max-width: 799px) {
+  .time_and_weather {
+    width: auto;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    transform: none;
+    font-size: 14px;
+  }
+}
+
+#time {
+  font-weight: bold;
+}
+
+#random_background {
+  opacity: .5;
+  position: fixed;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  z-index: -100;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  filter: blur(2px);
+}
