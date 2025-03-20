@@ -7,7 +7,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": "test/projects/movieList",
+  "start_url": "./test/projects/movieList",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
