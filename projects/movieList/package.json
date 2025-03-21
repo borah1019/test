@@ -1,5 +1,5 @@
 {
-  "name": "movieList",
+  "name": "movie-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -38,5 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://borah1019.github.io/"
+  "homepage": "https://borah1019.github.io/test/projects/movieList"
 }
